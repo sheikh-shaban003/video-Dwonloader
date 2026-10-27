@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="Designing by Shaban">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b70ff"/><stop offset="1" stop-color="#5c3de0"/></linearGradient></defs>
+  <rect width="420" height="96" rx="16" fill="#f7f8fc"/>
+  <g transform="translate(8 8)">
+    <rect width="80" height="80" rx="20" fill="url(#g)"/>
+    <circle cx="40" cy="40" r="30" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.4"/>
+    <path d="M51.5 28C51.5 18 28.5 18 28.5 30.5c0 12.5 23 8 23 20.5 0 12.5-23 11-23 1.5" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/>
+    <circle cx="63" cy="15" r="3.2" fill="#5be0c2"/>
+  </g>
+  <text x="108" y="50" font-family="Manrope,Arial,sans-serif" font-size="32" font-weight="800" fill="#202541" letter-spacing="-1.4">Designing</text>
+  <text x="110" y="75" font-family="Manrope,Arial,sans-serif" font-size="20" font-weight="800" fill="#7057ee" letter-spacing="-.3">by Shaban</text>
+</svg>

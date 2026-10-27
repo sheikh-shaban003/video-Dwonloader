@@ -1,0 +1,15 @@
+{
+  "name": "designing-by-shaban-frontend-functions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Netlify Functions for the Designing by Shaban AI Image Studio.",
+  "dependencies": {
+    "ag-psd": "^31.0.0",
+    "pngjs": "^7.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build-netlify.mjs",
+    "verify": "node scripts/verify-project.mjs"
+  }
+}

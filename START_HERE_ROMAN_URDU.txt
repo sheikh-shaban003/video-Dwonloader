@@ -1,0 +1,23 @@
+DESIGNING BY SHABAN — PEHLE YEH FILE PARHEIN
+
+Aapki website ke Video Downloader aur AI Image Generator ko sirf static HTML upload karne se start nahi kiya ja sakta. Backend chalana zaroori hai.
+
+LOCAL TEST (Windows)
+1. Docker Desktop install karein: https://www.docker.com/products/docker-desktop/
+2. Docker Desktop open karein aur Running hone dein.
+3. start-website-windows.bat par double-click karein.
+4. Pehli dafa script .env file banayegi. AI images ke liye .env mein OPENAI_API_KEY add karke service dobara build karein. Video download ke liye API key ki zaroorat nahi.
+5. Browser mein http://localhost:8088 open karein.
+6. Status check karein:
+   http://localhost:8088/api/health
+   http://localhost:8088/api/images/health
+
+LIVE WEBSITE
+- Root Dockerfile poori website, backend, yt-dlp, FFmpeg aur image API ko ek URL par chalata hai. Is project ke ROOT ko Docker-capable hosting par deploy karein.
+- Hosting dashboard mein OPENAI_API_KEY server-side environment variable add karein.
+- Agar aap Netlify par sirf static frontend rakhna chahte hain, to backend ko alag Docker service par deploy karna hoga. Uske baad website ke Video Downloader ya AI Image Generator page par Backend URL field mein backend ka HTTPS origin daal kar Save karein. Backend ke ALLOWED_ORIGIN mein frontend ka exact origin set hona chahiye.
+- Sirf ZIP ko Netlify/Hostinger static file upload mein upload karne se video downloader backend ya AI API start nahi hota.
+
+OPENAI API key ChatGPT subscription se alag hoti hai; API usage ke charges lag sakte hain. Key ko HTML/JavaScript mein kabhi na daalein.
+
+Full instructions: DEPLOYMENT_GUIDE_ROMAN_URDU.md and README.md

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: designing-by-shaban
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_RESPONSES_MODEL
+        value: gpt-6-astra
